@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url("https://i.ibb.co/hFSD0yw6/ok.jpg") no-repeat 50% 75%;
+            background-size: 150%;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px;
+        }
+        .header h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+        }
+        .salary {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .apply-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: white;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 15px rgba(142, 68, 173, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .apply-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(142, 68, 173, 1);
+        }
+        .testimonial-section {
+            margin-top: 80px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .testimonial-section blockquote {
+            font-size: 1.4rem;
+            font-style: italic;
+            margin: 20px 0;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .testimonial-author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .testimonial-author span {
+            font-weight: bold;
+        }
+        .feedback-section {
+            margin-top: 100px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .feedback-wrapper {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+        .feedback-container {
+            display: flex;
+            gap: 20px;
+            white-space: nowrap;
+            animation: moveFeedback 60s linear infinite;
+        }
+        .feedback-container:hover {
+            animation-play-state: paused;
+        }
+        .feedback-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            min-width: 300px;
+            max-width: 350px;
+            text-align: center;
+            display: inline-block;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .feedback-box strong {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .feedback-box strong i {
+            color: #ffcc00;
+        }
+        @keyframes moveFeedback {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>We're Hiring!</h1>
+            <p>Join us as a <strong>Data Entry Operator</strong> and work from the comfort of your home.</p>
+            <p class="salary">Earn up to ₹45,000 per month!</p>
+            <p>No prior experience needed. Flexible work hours.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        
+        <div class="testimonial-section">
+            <blockquote>
+                “Our goal is to create meaningful opportunities for individuals by reducing unemployment and providing a flexible work environment. We believe in empowering people with the freedom to work remotely, achieve financial stability, and grow professionally while maintaining a healthy work-life balance.”
+            </blockquote>
+            <div class="testimonial-author">
+                <img src="https://i.ibb.co/dJ4Fdzjr/wfh.png" alt="Profile Image">
+                <span>John Doe</span>
+                <small>HR Manager</small>
+            </div>
+        </div>
+        
+        <div class="feedback-section">
+            <h2>What Our Employees Say</h2>
+            <div class="feedback-wrapper">
+                <div class="feedback-container">
+                    <div class="feedback-box">
+                        <p>"Working from home has been a game-changer. The flexibility and pay are great!"</p>
+                        <strong><i class="fas fa-user"></i> Anjali M.</strong>
+                    </div>
+                    <div class="feedback-box">
+                        <p>"I love the supportive team and the opportunity to grow in my career."</p>
+                        <strong><i class="fas fa-user"></i> Rajesh K.</strong>
+                    </div>
+                    <div class="feedback-box">
+                        <p>"This job allowed me to work while taking care of my family. Highly recommended!"</p>
+                        <strong><i class="fas fa-user"></i> Priya S.</strong>
+                    </div>
+                    <div class="feedback-box">
+                        <p>"Amazing work environment and great flexibility!"</p>
+                        <strong><i class="fas fa-user"></i> Rohan T.</strong>
+                    </div>
+                    <div class="feedback-box">
+                        <p>"Great opportunity to earn and grow professionally!"</p>
+                        <strong><i class="fas fa-user"></i> Neha D.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
