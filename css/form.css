@@ -1,0 +1,65 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-container input, .form-container select {
+    width: 97%;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+}
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.phone-container span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px;
+    border-radius: 5px;
+}
+.phone-container input {
+    flex: 1;
+}
+.form-container button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.form-container button:hover {
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+}
+.note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    text-align: center;
+}
+.form-title {
+    text-align: center;
+}
