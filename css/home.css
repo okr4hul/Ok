@@ -125,7 +125,6 @@ body {
     to { transform: translateX(-100%); }
 }
 
-/*
 .loading-overlay {
     position: fixed;
     top: 0;
@@ -151,4 +150,3 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-*/
