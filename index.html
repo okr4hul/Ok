@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="css/home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
     <script>
-        function showLoading() {
+        function showLoading(event) {
+            event.preventDefault();
             document.getElementById("loading-overlay").style.display = "flex";
+            setTimeout(() => {
+                window.location.href = "apply.html";
+            }, 500);
         }
     </script>
 </head>
@@ -19,11 +23,11 @@
     </div>
     <div class="container">
         <div class="header">
-            <h1>We're Hiring!</h1>
+            <h1>Job Spark</h1>
             <p>Join us as a <strong>Data Entry Operator</strong> and work from the comfort of your home.</p>
             <p class="salary">Earn up to ₹45,000 per month!</p>
             <p>No prior experience needed. Flexible work hours.</p>
-            <a href="apply.html" class="apply-btn" onclick="showLoading()">Apply Now</a>
+            <a href="apply.html" class="apply-btn" onclick="showLoading(event)">Apply Now</a>
         </div>
 
         <div class="testimonial-section">
@@ -38,7 +42,7 @@
         </div>
 
         <div class="feedback-section">
-            <h2>What Our Employees Say</h2>
+            <h2>What Our Users Say</h2>
             <div class="feedback-wrapper">
                 <div class="feedback-container">
                     <div class="feedback-box">
@@ -50,7 +54,7 @@
                         <strong><i class="fas fa-user"></i> Rajesh K.</strong>
                     </div>
                     <div class="feedback-box">
-                        <p>"This job allowed me to work while taking care of my family. Highly recommended!"</p>
+                        <p>"This site allowed me to work while taking care of my family. Highly recommended!"</p>
                         <strong><i class="fas fa-user"></i> Priya S.</strong>
                     </div>
                     <div class="feedback-box">
