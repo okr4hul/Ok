@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="css/pay.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script>
+        function showPopup() {
+            document.getElementById("popup").classList.add("active");
+        }
+        function closePopup() {
+            document.getElementById("popup").classList.remove("active");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="payment-container">
+        <h2>UPI Payment</h2>
+        <p>Scan the QR code below to pay ₹39</p>
+
+        <div class="upi-qr">
+            <img src="https://via.placeholder.com/200" alt="UPI QR Code">
+        </div>
+
+        <p>Once the payment is completed, click the button below</p>
+        <button class="pay-btn" onclick="showPopup()">Payment Done</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="cross"></div>
+        <p style="margin-top: 40px; text-align: center;">Payment not received yet</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</body>
+</html>
