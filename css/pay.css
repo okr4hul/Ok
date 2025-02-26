@@ -14,8 +14,8 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 .upi-qr {
-    width: 200px;
-    height: 200px;
+    width: 75px;
+    height: 75px;
     margin: 20px auto;
     background: white;
     display: flex;
