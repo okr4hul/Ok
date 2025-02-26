@@ -19,7 +19,7 @@
 <body>
     <div class="form-container">
         <h2 class="form-title">Fill in Your Details</h2>
-        <form action="pay.html" method="GET">
+        <form>
             <div class="form-group">
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name" maxlength="26" placeholder="Enter your first name" required>
@@ -68,7 +68,7 @@
                 </select>
             </div>
             <p class="note">Note: You will be contacted soon with job information and schedule. A fee of ₹39 is required for form submission.</p>
-            <button type="submit">Submit & Pay</button>
+            <button type="button" onclick="window.location.href='pay.html'">Submit & Pay</button>
         </form>
     </div>
 </body>
