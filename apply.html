@@ -19,7 +19,13 @@
 <body>
     <div class="form-container">
         <h2 class="form-title">Fill in Your Details</h2>
-        <form>
+        <script>
+            function preventFormData(event) {
+                event.preventDefault();
+                window.location.href = "pay.html";
+            }
+        </script>
+        <form action="pay.html" method="GET" onsubmit="return preventFormData(event);">
             <div class="form-group">
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name" maxlength="26" placeholder="Enter your first name" required>
